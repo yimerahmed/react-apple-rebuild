@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple via jquery</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/Resources/css/styleboot.css" />
+
+    <style>
+      
+@media (max-width:767.9px){
+  .text-white{
+    display: none;
+  }
+  .list-item{
+    display: none;
+  }
+}
+@media (min-width:768px){
+  .text-white{
+    display: block;
+    font-size: 10px;
+  }
+  .line{
+    display: none;
+  }
+  .list-item{
+    display: block;
+  }
+}
+@media (min-width:920px){
+  .text-white{
+    font-size: 12px;
+  }
+  .copy-div{
+    width: 100%;
+    flex-direction: row;
+}
+.list-item{
+    display: block;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top header ">
+      <div class="container navbar align-items-center justify-content-center ul-wrapper">
+        <ul class="navbar-nav flex-row ">
+          <li class=" nav-item  "> <a id="logo" href="https://www.apple.com/" ><img style="width: 15px" src="/Resources/icons/icons/logo.png"  alt="..."/> </a> </li>     
+          <li class="nav-item d-sm-none d-md-block"> <a class="text-white nav-link" aria-current="page" href="https://www.apple.com/us/shop/goto/store">Store</a> </li>
+          <li class="nav-item d-sm-none d-md-block"> <a class="text-white nav-link" href="https://www.apple.com/mac/">Mac</a> </li>
+          <li class="nav-item d-sm-none d-md-block"> <a class="text-white nav-link" href="https://www.apple.com/ipad/">iPad</a></li>
+          <li class="nav-item d-sm-none d-md-block"> <a class="text-white nav-link" href="https://www.apple.com/iphone/">iPhone</a></li>
+          <li class="nav-item d-sm-none d-md-block"> <a class="text-white nav-link" href="https://www.apple.com/watch/">Watch</a></li>
+          <li class="nav-item d-sm-none d-md-block"> <a class="text-white nav-link" href="https://www.apple.com/apple-vision-pro/">Vision</a> </li>
+          <li class="nav-item d-sm-none d-md-block"> <a class="text-white nav-link" href="https://www.apple.com/airpods/">AirPods</a></li>
+          <li class="nav-item d-sm-none d-md-block"><a class="text-white nav-link" href="https://www.apple.com/tv-home/">TV & Home</a></li>
+          <li class="nav-item d-sm-none d-md-block"> <a class="text-white nav-link" href="https://www.apple.com/entertainment/">Entertainment</a></li>
+          <li class="nav-item d-sm-none d-md-block"> <a class="text-white nav-link" href="https://www.apple.com/us/shop/goto/buy_accessories">Accessories</a></li>
+          <li class="nav-item d-sm-none d-md-block "> <a  class="text-white nav-link"  href="https://support.apple.com/?cid=gn-ols-home-hp-tab">Support</a> </li>
+          <li class="nav-item d-block  "> <a  href="https://www.apple.com/us/search" ><img  style="width: 15px" src="/Resources/icons/icons/search-icon.png" alt="..." /> </a> </li>
+          <li class="nav-item d-block  "> <a  href="https://www.apple.com/us/shop/goto/bag"><img style="width: 15px" src="/Resources/icons/icons/cart.png"  alt="..."/></a> </li>
+          <li class="nav-item d-block  text-light icons d-sm-block d-lg-none"><i class="fa fa-bars" aria-hidden="true"></i>    </li>
+        </ul >
+      </div>
+    </nav>
+    <a class="container-fluid p-5 " href="#">
+      <object>
+        <div class="col-12 text-dark ft-5 text-center text-decoration-none spacial-wrapper mb-0">
+          <div><img style="width: 200px" src="/Resources/images/images/inplace-of vision.png"  alt="..." /> </div>
+          <p class="h5">Wellcome to the era of spacial computing.</p>
+          <p class="h6 text-muted">  <span class="text-muted" >Pre-order starting 1.19 at 5.00 am. PT</span >  </p>
+          <p class="h6 text-muted">Available starting 2.2</p>
+          <div class="col-12">  <a href="#"  >Learn more <i class="fa fa-angle-right" aria-hidden="true"></i ></a>  </div>
+        </div>
+      </object>
+    </a>
+
+    <a  class="container-fluid p-5"  href="#">
+      <object>
+        <div class="titanium col-12 ft-5 text-center bg-dark text-white text-decoration-none">
+          <div class="h1">iPhone 15 Pro</div>
+          <div class="h4">Titanium. So strong. So light. So pro.</div>
+          <div class="row titanium-link mx-auto">
+            <div class="col-6 text-end"><a href="#" ><span class="mr-5">Learn more <i class="fa fa-angle-right" aria-hidden="true"></i></span></a> </div>
+            <div class="col-6 text-start">  <a href="#">Buy <i class="fa fa-angle-right" aria-hidden="true"></i></a> </div>
+          </div>
+        </div>
+      </object>
+    </a>
+
+    <a  class="container-fluid "  href="#"  >
+      <object>
+      <div class="new-camera col-12 text-center text-dark text-decoration-none">
+          <p class="h1">iPhone 15</p>
+          <p class="h5">New camera. New design. New phoria.</p>
+          <div class="row camera-link">
+        <div class="mr-5 col-6 text-end"> <a href="#"   >Learn more <i class="fa fa-angle-right" aria-hidden="true"></i ></a>  </div>
+            <div class="col-6 text-start"> <a href="#">Buy <i class="fa fa-angle-right" aria-hidden="true"></i></a>  </div>
+          </div>
+        </div>
+      </object>
+    </a>
+
+    <section class="container-fluid  smarter-section">
+      <div class="row ms-1 me-1 gap-3">
+        <a class=" smart col-sm-12 col-md-5 ft-5 p-5" href="#">
+          <object>
+            <div class=" text-white  text-decoration-none text-center pt-5 ">
+              <div><img src="/Resources/images/images/watchseries9.png" class="img-fluid" alt=""></div>
+              <p class="h5">Smarter. Brighter. Mightier</p>
+              <div class="row brighter-link mx-auto">
+          <div class=" col-6 text-end"><a href="#">Learn more <i class="fa fa-angle-right" aria-hidden="true"></i></a>  </div>
+          <div class="col-6 text-start"> <a href="#">Buy <i class="fa fa-angle-right" aria-hidden="true"></i ></a></div>
+              </div>
+            </div>
+          </object>
+        </a>
+
+        <a class="adventure-column col-sm-12 col-md-5 ft-5 text-decoration-none" href="#">
+          <object>
+            <div class=" text-dark  text-center p-5">
+              <div><img src="/Resources/images/images/watch-ultra-2.png" class="img-fluid" alt="..." /> </div>
+              <p class="h5">Next level adventure</p>
+              <div class="row adventure-link  mx-auto">
+            <div class=" col-6 text-end"> <a href="#" >Learn more <i class="fa fa-angle-right" aria-hidden="true"></i ></a></div>
+            <div class="col-6 text-start"> <a href="#" >Buy <i class="fa fa-angle-right" aria-hidden="true"></i ></a></div>
+              </div>
+            </div>
+          </object>
+        </a>
+      </div>
+    </section>
+
+    <section class="container-fluid  macbook-section">
+      <div class="row ms-1 me-1 gap-3">
+        <a class="macbook-wrapper col-sm-12 col-md-5 ft-5 text-decoration-none" href="#">
+          <object>
+            <div class="  text-dark text-center  p-5">
+              <p class="h1"><b>MacBook Pro</b></p>
+              <p class="h4">Mind-blowing. Head-turning.</p>
+              <div class="row mac-link mx-auto">
+           <div class=" col-6 text-end"> <a href="#">Learn more <i class="fa fa-angle-right" aria-hidden="true"></i ></a> </div>
+                <div class="col-6 text-start"> <a href="#" >Buy <i class="fa fa-angle-right" aria-hidden="true"></i ></a></div>
+              </div>
+            </div>
+          </object>
+        </a>
+
+        <a class=" fitness-wrapper col-sm-12 col-md-5 ft-5 text-decoration-none" href="#">
+          <object>
+            <div class=" text-dark text-center  p-5">
+              <div><img src="/Resources/images/images/fitnes+.png" class="img-fluid"  alt="..." /> </div>
+              <p>From HIIT to Yoga. From 5 to 45 minutes.</p>
+              <p>There is something for everyone</p>
+              <div class="row fitness-link mx-auto">
+                 <div class=" col-6 text-end"> <a href="#" >Learn more  <i class="fa fa-angle-right" aria-hidden="true"></i ></a> </div>
+                <div class="col-6 text-start"> <a href="#">Try it free <sup>1</sup> </a> </div>
+              </div>
+            </div>
+          </object>
+        </a>
+      </div>
+    </section>
+
+    <section class="container-fluid center getup-section">
+      <div class="row ms-1 me-1 gap-3">
+        <a class="cash col-sm-12 col-md-5 ft-5 text-decoration-none" href="#">
+          <object>
+            <div class=" text-center p-5 text-dark">
+              <div id="card-image"><img  src="/Resources/images/images/card.png"  class="img-fluid"  alt="..." />  </div>
+              <p>Get up to 3% Daily cash back with every purchase</p>
+              <div class="row getup-link mx-auto">
+            <div class=" col-6 text-end"> <a href="#" >Learn more <i class="fa fa-angle-right" aria-hidden="true"></i ></a></div>
+                <div class="col-6 text-start"> <a href="#">Apply now <i class="fa fa-angle-right" aria-hidden="true"></i ></a> </div>
+              </div>
+            </div>
+          </object>
+        </a>
+
+        <a class="dollar col-sm-12 col-md-5 ft-5 text-decoration-none" href="#">
+          <object>
+            <div class=" text-center p-5 text-dark">
+              <div> <img src="/Resources/images/images/trade In.png" class="img-fluid" alt="..." /> </div>
+              <p> Get $200-$650 in credit when you trade in iPhone 11 or higher<sup>2</sup></p>
+              <div id="dollar-link" class="mx-auto"> <a class="see justify-content-center" href="#">See what your device is worth <i class="fa fa-angle-right" aria-hidden="true"></i ></a> </div>
+            </div>
+          </object>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid col-11  p-5 commedy-section">
+       
+            <div class="row  stream-link w-100 pe-5 ps-5 pb-5">
+              <div class="rounded-pill font-weight-bold bg-white col-sm-12 col-md-3 p-2 text-end ">
+                <a href="#"><span class="text-dark stream p-5" >stream now <i class="fa fa-play-circle" aria-hidden="true"></i><span></a> </div>
+              <div class="font-weight-bold text-white col-sm-12 col-md-7 " id="emmy"> commedy. 21 Emmy <sup><i class="fa fa-registered" aria-hidden="true"></i></sup> Nominations Including Best Comedy</div>
+              <!-- <div class="col-12 col-md-2"><img src="/images/images/tv+.png" class="img-fluid" alt="..."></div> -->
+            </div>
+      </div>
+    </section>
+
+   
+
+    <footer class="container-fluid col-12">
+      <div class="footer-wrapper mx-auto p-3 ">
+      <div class="paragraph-div">
+        
+          <li>
+            <p class="lead">
+              Apple Fitness+ requires iPhone 8 or later or Apple Watch Series 3
+              or later paired with iPhone 6s or later. New subscribers only.
+              $9.99/month after trial. Plan automatically renews until
+              cancelled. Terms apply.
+            </p>
+          </li>
+          <br />
+          <li>
+            <p class="lead ">
+              Trade-in values will vary based on the condition, year, and
+              configuration of your eligible trade-in device. Not all devices
+              are eligible for credit. You must be at least 18 years old to be
+              eligible to trade in for credit or for an Apple Gift Card.
+              Trade-in value may be applied toward qualifying new device
+              purchase, or added to an Apple Gift Card. Actual value awarded is
+              based on receipt of a qualifying device matching the description
+              provided when estimate was made. Sales tax may be assessed on full
+              value of a new device purchase. In-store trade-in requires
+              presentation of a valid photo ID (local law may require saving
+              this information). Offer may not be available in all stores, and
+              may vary between in-store and online trade-in. Some stores may
+              have additional requirements. Apple or its trade-in partners
+              reserve the right to refuse or limit quantity of any trade-in
+              transaction for any reason. More details are available from
+              Apple’s trade-in partner for trade-in and recycling of eligible
+              devices. Restrictions and limitations may apply.
+            </p>
+          </li>
+          <br />
+        
+           <p class="lead ">
+              Apple Vision Pro has not been authorized as required by the rules of
+              the Federal Communications Commission. This device is not, and may not
+              be, offered for sale or lease, or sold or leased, until authorization
+              is obtained.
+            </p>
+            <br />
+        <p class="lead">
+          Available in the U.S. on
+          <a href="https://www.apple.com/">apple.com</a>, in the Apple Store
+          app, and at Apple Stores.
+        </p>
+        <br />
+        <p class="lead">
+          To access and use all Apple Card features and products available only
+          to Apple Card users, you must add Apple Card to Wallet on an iPhone or
+          iPad that supports and has the latest version of iOS or iPadOS. Apple
+          Card is subject to credit approval, available only for qualifying
+          applicants in the United States, and issued by Goldman Sachs Bank USA,
+          Salt Lake City Branch.
+        </p>
+        <br />
+        <p class="lead">
+          If you reside in the U.S. territories, please call Goldman Sachs at
+          877-255-5923 with questions about Apple Card.
+        </p>
+        <br />
+        <p class="lead">
+          Learn more about how Apple Card applications are evaluated at
+          <a href="https://support.apple.com/kb/HT209218"
+            >support.apple.com/kb/HT209218.</a
+          >
+        </p>
+        <br />
+        <p class="lead">A subscription is required for Apple TV+.</p>
+      </div>
+      <hr />
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class=" col-12 col-md-2">
+            <div class="column1-wrapper">
+              <div class="a1-wrapper heading">
+               <h4 class="heading4">Shop and Learn  
+                <span class="icon">
+                  <i class=" fas fa-plus d-md-none"></i> <i class="fas fa-times d-md-none"></i>
+               </span></h4> 
+                <ul class="list-item ">
+                  <li ><a class="list-link" href="https://www.apple.com/us/shop/goto/store">Store</a> </li>
+                  <li ><a href="https://www.apple.com/mac/">Mac</a></li>
+                  <li ><a href="https://www.apple.com/ipad/">iPad</a></li>
+                  <li ><a href="https://www.apple.com/iphone/">iPhone</a></li>
+                  <li ><a href="https://www.apple.com/watch/">Watch</a></li>
+                  <li >  <a href="https://www.apple.com/apple-vision-pro/">Vision</a> </li>
+                  <li ><a href="https://www.apple.com/airpods/">AirPods</a></li>
+                  <li ><a href="https://www.apple.com/tv-home/">TV & Home</a></li>
+                  <li ><a href="https://www.apple.com/airtag/">AirTag</a></li>
+                  <li > <a href="https://www.apple.com/us/shop/goto/buy_accessories">Accessories</a></li>
+                  <li > <a href="https://www.apple.com/us/shop/goto/giftcards">Gift Cards</a> </li>
+                </ul>
+              </div>
+              <hr class="line">
+          <div class="a2-wrapper heading">
+            <h4 class="heading4">Apple Wallet <span class="icon"><i class="icon fas fa-plus d-md-none"></i> <i class="fas fa-times d-md-none"></i></span></h4> 
+            <ul class="list-item ">
+              <li ><a href="https://www.apple.com/wallet/">Wallet</a></li>
+              <li><a href="https://www.apple.com/apple-card/">Apple Card</a></li>
+              <li><a href="https://www.apple.com/apple-pay/">Apple Pay</a> </li>
+              <li>  <a href="https://www.apple.com/apple-cash/">Apple Cash</a></li>
+            </ul>  
+              </div>
+              <hr class="line">
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-2">
+            <div class="column2-wrapper">
+              <div class="b1-wrapper heading">
+                  <h4 class="heading4">Account  <i class="icon fas fa-plus d-md-none"></i> <i class="fas fa-times d-md-none"></i></h4>
+                  
+              <ul class="list-item ">
+                <li> <a href="https://appleid.apple.com/us/">Manage Your Apple ID</a></li>
+                <li ><a href="https://www.apple.com/us/shop/goto/account">Apple Store Account</a></li>
+                <li ><a href="https://www.icloud.com/">iCloud.com</a></li>
+              </ul>
+              </div>
+              <hr class="line">
+              <div class="b2-wrapper heading">
+                  <h4 class="heading4">Entertainment <i class="icon fas fa-plus d-md-none"></i> <i class="fas fa-times d-md-none"></i></h4>
+                  <ul class="list-item ">
+                <li > <a href="https://www.apple.com/apple-one/">Apple One</a></li>
+                <li > <a href="https://www.apple.com/apple-tv-plus/">Apple TV+</a></li>
+                <li > <a href="https://www.apple.com/apple-music/">Apple Music</a></li>
+                <li > <a href="https://www.apple.com/apple-arcade/">Apple Arcade</a></li>
+                <li > <a href="https://www.apple.com/apple-fitness-plus/" >Apple Fitness+</a></li>
+                <li > <a href="https://www.apple.com/apple-news/">Apple News+</a></li>
+                <li ><a href="https://www.apple.com/apple-podcasts/" >Apple Podcasts</a></li>
+                <li ><a href="https://www.apple.com/apple-books/">Apple Books</a></li>
+                <li > <a href="https://www.apple.com/app-store/">App Store</a></li>
+                  </ul>
+              
+                
+              </div>
+              <hr class="line">
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-2">
+            <div class="column3-wrapper heading">
+              
+             <h4 class="heading4">Apple Store  <i class="icon fas fa-plus d-md-none"></i> <i class="fas fa-times d-md-none"></i></h4>
+            <ul class="list-item ">
+                <li ><a href="https://www.apple.com/retail/">Find a Store</a></li>
+                <li > <a href="https://www.apple.com/retail/geniusbar/">Genius Bar</a></li>
+                <li ><a href="https://www.apple.com/today/">Today at Apple</a></li>
+                <li > <a href="https://www.apple.com/today/camp/">Apple Camp</a></li>
+                <li ><a href="https://apps.apple.com/us/app/apple-store/id375380948" >Apple Store App</a ></li>
+                <li > <a href="https://www.apple.com/us/shop/goto/special_deals">Certified Refurbished</a></li>
+                <li><a href="https://www.apple.com/us/shop/goto/trade_in">Apple Trade In</a > </li>
+                <li><a href="https://www.apple.com/us/shop/goto/payment_plan">Financing</a></li>
+                <li><a href="https://www.apple.com/us/shop/goto/buy_iphone/carrier_offers">Carrier Deals at Apple</a > </li>
+                <li><a href="https://www.apple.com/us/shop/goto/order/list">Order Status</a></li>
+                <li><a href="https://www.apple.com/us/shop/goto/help">Shopping Help</a></li>
+               </ul> 
+            
+             
+            </div>
+            <hr class="line">
+          </div>
+
+          <div class="col-sm-12 col-md-2">
+            <div class="column4-wrapper">
+              <div class="d1-wrapper heading">
+                  <h4 class="heading4">For Business <i class="icon fas fa-plus d-md-none"></i>  <i class="fas fa-times d-md-none"></i></h4>
+              <ul class="list-item ">
+                <li > <a href="https://www.apple.com/business/" >Apple and Business</a></li>
+                <li><a href="https://www.apple.com/retail/business/">Shop for Business</a></li>
+              </ul> 
+              </div>
+              <hr class="line">
+              <div class="d2-wrapper heading">
+                  <h4 class="heading4">For Education <i class="icon fas fa-plus d-md-none"></i> <i class="fas fa-times d-md-none"></i></h4>
+                  <ul class="list-item ">
+               <li > <a href="https://www.apple.com/education/">Apple and Education</a  >  </li>
+              <li>  <a href="https://www.apple.com/education/k12/how-to-buy/"  >Shop for K-12</a> </li>
+              <li>  <a href="https://www.apple.com/us/shop/goto/educationrouting">Shop for College</a>  </li>
+                  </ul>
+              </div>
+              <hr class="line">
+              <div class="d3-wrapper heading">
+             <h4 class="heading4">For Healthcare <i class="icon fas fa-plus d-md-none"></i> <i class="fas fa-times d-md-none"></i></h4>
+                <ul class="list-item ">
+                  <li > <a href="https://www.apple.com/healthcare/" >Apple in Healthcare</a ></li>
+                    <li > <a href="https://www.apple.com/healthcare/apple-watch/" >Health on Apple Watch</a></li>
+                    <li ><a href="https://www.apple.com/healthcare/health-records/" >Health Records on iPhone</a ></li>
+                </ul> 
+              </div>
+              <hr class="line">
+              <div class="d4-wrapper heading">
+               <h4 class="heading4">For Government <i class="icon fas fa-plus d-md-none"></i> <i class="fas fa-times d-md-none"></i></h4>
+                  <ul class="list-item ">
+                <li ><a href="https://www.apple.com/r/store/government/">Shop for Government</a></li>
+                <li ><a href="https://www.apple.com/us/shop/goto/eppstore/veteransandmilitary">Shop for Veterans and Military</a ></li>
+                  </ul>
+              
+                
+              </div>
+              <hr class="line">
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-2">
+            <div class="column5-wrapper">
+              <div class="e1-wrapper heading">
+                  <h4 class="heading4">Apple Values <i class="icon fas fa-plus d-md-none"></i>  <i class="fas fa-times d-md-none"></i></h4>
+                <ul class="list-item ">
+                  <li ><a href="https://www.apple.com/accessibility/">Accessibility</a> </li>
+                <li> <a href="https://www.apple.com/education-initiative/" >Education</a ></li>
+                <li> <a href="https://www.apple.com/environment/">Environment</a> </li>
+                <li > <a href="https://www.apple.com/diversity/" >Inclusion and Diversity</a ></li>
+                <li><a href="https://www.apple.com/privacy/">Privacy</a></li>
+               <li><a href="https://www.apple.com/racial-equity-justice-initiative/" >Racial Equity and Justice</a > </li>
+                <li > <a href="https://www.apple.com/supplier-responsibility/" >Supplier Responsibility</a ></li>
+                </ul>  
+              
+                
+              </div>
+              <hr class="line">
+              <div class="e2-wrapper heading">
+                  <h4 class="heading4">About Apple <i class="icon fas fa-plus d-md-none"></i>  <i class="fas fa-times d-md-none"></i></h4>
+                 <ul class="list-item ">
+                  <li ><a href="https://www.apple.com/newsroom/">Newsroom</a></li>
+                  <li > <a href="https://www.apple.com/leadership/">Apple Leadership</a ></li>
+                  <li > <a href="https://www.apple.com/careers/us/">Career Opportunities</a > </li>
+                  <li ><a href="Career Opportunities">Investors</a></li>
+                  <li> <a href="https://www.apple.com/compliance/">Ethics & Compliance</a > </li>
+                  <li><a href="https://www.apple.com/apple-events/">Events</a>  </li>
+                  <li >  <a href="https://www.apple.com/contact/">Contact Apple</a>  </li>
+                 </ul>
+              </div>
+              <hr class="line">
+            </div>
+          </div>
+        </div>
+        
+        <p style="font-size: 14px"> More ways to shop:<a href="https://www.apple.com/retail/">Find an Apple Store</a> or
+          <a href="https://locate.apple.com/">other retailer</a> near you. Or call 1-800-MY-APPLE. </p>
+
+        <hr />
+        <div class="row copy-div" style="font-size: 14px">
+          <div class="mr-5 copy-one col-sm-4 col-lg-4"> Copyright © 2024 Apple Inc. All rights reserved.</div>
+          <div class="d-flex  copy-two col-sm-6 col-lg-5 privacy-wrapper ">
+            <li > <a class="col-lg-1" href="https://www.apple.com/legal/privacy/">Privacy Policy</a></li>
+            <li ><a class="col-lg-1" href="https://www.apple.com/legal/internet-services/terms/site.html">Terms of Use</a> </li>
+            <li > <a class="col-lg-1" href="https://www.apple.com/us/shop/goto/help/sales_refunds">Sales and Refunds</a> </li>
+            <li ><a class="col-lg-1" href="https://www.apple.com/legal/"> Legal</a></li>
+            <li  id="site-map"> <a class="col-lg-1" href="https://www.apple.com/sitemap/"> Site Map</a> </li>
+           </div>
+          <div class="us copy-three col-sm-2 col-lg-3"> <a href="https://www.apple.com/choose-country-region/">United States</a> </div>
+        </div>
+      </div>
+    </div>
+    </footer>
+
+
+
+<script src="/jquery-3.7.1.js"></script>
+    <script src="/JS/apple.js"></script>
+  </body>
+</html>
